@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 2</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+}
+.card{
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:20px;
+text-align:center;
+color:white;
+animation:fadeIn 1.5s ease;
+}
+img{
+width:90%;
+max-width:300px;
+border-radius:20px;
+margin-bottom:20px;
+animation:float 3s infinite;
+}
+button{
+padding:12px 35px;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+background:#00c853;
+color:white;
+transition:0.3s;
+}
+button:hover{transform:scale(1.1);}
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+<img src="images/image2.jpg" alt="">
+<h2>You BC why did you click on "no"</h2>
+<h2>click on accept</h2>
+<button onclick="location.href='page3.html'">Accept</button>
+</div>
+</body>
+</html>
